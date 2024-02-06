@@ -49,3 +49,11 @@ android:screenOrientation="unspecified"
 
 **Указание папки ресурсов**
 
+Папка указывается как свойство у собираемой цели:
+
+```
+set_target_properties(${PROJECT_NAME} PROPERTIES
+    QT_ANDROID_PACKAGE_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/android
+)
+```
+

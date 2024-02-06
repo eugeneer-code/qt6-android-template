@@ -13,7 +13,7 @@ target_sources(${PROJECT_NAME} PRIVATE
     qml.qrc
 )
 
-set_target_property(${PROJECT_NAME} APPEND PROPERTY
+set_target_properties(${PROJECT_NAME} PROPERTIES
     QT_ANDROID_PACKAGE_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/android
 )
 
